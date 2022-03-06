@@ -7,7 +7,7 @@
 /* Everything here will affect the class game */
 .game {
     width: 500px;
-    height: 200px;
+    height: 500px;
     border: 1px solid pink;
     margin:auto;
     background-color: cyan;
@@ -23,14 +23,14 @@
 }
 
 .animate {
-    animation:jump 3s linear;
+    animation:jump 1s linear;
 }
 
 @keyframes jump {
-    0%{top: 250px;}
-    30%{top: 150px;}
-    70%{top: 150px;}
-    100%{top: 250px;}
+    0%{top: 100px;}
+    30%{top: 30px;}
+    70%{top: 40px;}
+    100%{top: 100px;}
 
 }
 
