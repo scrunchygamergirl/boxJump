@@ -21,9 +21,14 @@ var checkDead = setInterval(function() {
         document.getElementById("score").innerHTML = Math.floor(counter/100);
     }
 }, 100);
-
-    document.addEventListener('keydown', (event) => {
-        if (event.code==="Space") {
-            jump()
+// How to bind a key into a function
+document.addEventListener('keydown', (e) => {
+        if (e.code==="Space") {
+            jump();
+            console.log("I'm jumping")
+        } else if (e.keyCode == '39') {
+            console.log("right arrow key has been pressed")
+        } else if (e.keyCode == '37') {
+            console.log("left arow key has been pressed")
         }
 }, false);
