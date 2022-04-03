@@ -8,6 +8,12 @@ function jump(){
         character.classList.remove("animate");
     },1500);
 }
+function moveRight(){
+    console.log("right arrow key has been pressed")
+}
+function moveLeft(){
+    console.log("left arow key has been pressed")
+}
 var checkDead = setInterval(function() {
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
@@ -27,8 +33,9 @@ document.addEventListener('keydown', (e) => {
             jump();
             console.log("I'm jumping")
         } else if (e.keyCode == '39') {
-            console.log("right arrow key has been pressed")
+            moveRight();
         } else if (e.keyCode == '37') {
-            console.log("left arow key has been pressed")
+            moveLeft();
+            
         }
 }, false);
